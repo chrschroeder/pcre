@@ -1156,7 +1156,11 @@ req_byte match. */
 environments where these macros are defined elsewhere. Unfortunately, there
 is no way to do the same for the typedef. */
 
+#ifdef vxWorks
+#undef OK
+#else
 typedef int BOOL;
+#endif
 
 #ifndef FALSE
 #define FALSE   0
