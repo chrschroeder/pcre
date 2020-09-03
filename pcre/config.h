@@ -368,6 +368,9 @@ sure both macros are undefined; an emulation function will then be used. */
 /* Define to the type of a signed integer type of width exactly 64 bits if
    such a type exists and the standard includes do not define it. */
 /* #undef int64_t */
+#ifdef vxWorks
+#define int64_t signed long long
+#endif
 
 /* Define to `unsigned int' if <sys/types.h> does not define. */
 /* #undef size_t */
