@@ -336,11 +336,9 @@ sure both macros are undefined; an emulation function will then be used. */
 
 /* Define to any value to enable the 16 bit PCRE library. */
 /* #undef SUPPORT_PCRE16 */
-#define SUPPORT_PCRE16
 
 /* Define to any value to enable the 32 bit PCRE library. */
 /* #undef SUPPORT_PCRE32 */
-#define SUPPORT_PCRE32
 
 /* Define to any value to enable the 8 bit PCRE library. */
 /* #undef SUPPORT_PCRE8 */
