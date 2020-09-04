@@ -78,7 +78,9 @@ sure both macros are undefined; an emulation function will then be used. */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 /* #undef HAVE_INTTYPES_H */
+#ifndef vxWorks
 #define HAVE_INTTYPES_H 1
+#endif
 
 /* Define to 1 if you have the <limits.h> header file. */
 /* #undef HAVE_LIMITS_H */
@@ -110,7 +112,9 @@ sure both macros are undefined; an emulation function will then be used. */
 
 /* Define to 1 if you have the <stdint.h> header file. */
 /* #undef HAVE_STDINT_H */
+#ifndef vxWorks
 #define HAVE_STDINT_H 1
+#endif
 
 /* Define to 1 if you have the <stdlib.h> header file. */
 /* #undef HAVE_STDLIB_H */
@@ -368,9 +372,6 @@ sure both macros are undefined; an emulation function will then be used. */
 /* Define to the type of a signed integer type of width exactly 64 bits if
    such a type exists and the standard includes do not define it. */
 /* #undef int64_t */
-#ifdef vxWorks
-#define int64_t signed long long
-#endif
 
 /* Define to `unsigned int' if <sys/types.h> does not define. */
 /* #undef size_t */
